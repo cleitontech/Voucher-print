@@ -1,0 +1,84 @@
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-break	{ page-break-before: always; }
+
+#vouchers {
+	/*height: 842px;*/
+	width: 650px;
+}
+
+.voucher {
+	border-left: 1px solid #F4F4F4;
+	border-right: 1px solid #F4F4F4;
+	border-bottom: 1px solid #F4F4F4;
+	page-break-inside: avoid;
+	float: left;
+	height: 134px;
+	width: 206px;
+	position: relative;
+}
+
+#vouchers .voucher:nth-child(3n+2) {
+	border-left: 0;
+	border-right: 0;
+}
+
+.voucher .title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333333;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.voucher .logo {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+
+.voucher .logo>img {
+	width: 80px;
+}
+
+.voucher .info {
+	position: absolute;
+    top: 117px;
+    left: 16px;
+    font-size: 8px;
+}
+
+.voucher .vcode {
+	position: absolute;
+    top: 55px;
+    left: 90px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.voucher .vtime{
+	position: absolute;
+    top: 70px;
+    left: 90px;
+    font-size: 9px;
+}
+
+.voucher .vexpire{
+	position: absolute;
+    top: 85px;
+    left: 90px;
+    font-size: 9px;
+	color: silver;
+}
+
+.voucher .vtime strong, .voucher .vtime b {
+	color: #333333 !important;
+ }
